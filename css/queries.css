@@ -1,0 +1,97 @@
+/********************/
+/* LAPTOP 1024px */
+/********************/
+@media (max-width: 64em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 54em) {
+  .main-photo img {
+    object-position: center;
+  }
+}
+
+/********************/
+/* TABLET 768px */
+/********************/
+@media (max-width: 48em) {
+  .everything {
+    overflow: clip;
+    position: relative;
+  }
+  .nav li a {
+    color: #000;
+    border-bottom: none;
+    padding-bottom: 0;
+    border-bottom: none;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .nav li a:active,
+  .nav li a:hover {
+    color: #000;
+    border-bottom: none;
+    transition: none;
+  }
+  .nav {
+    position: absolute;
+    background-color: #ffffffe3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    transition: all 0.5s;
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+    visibility: hidden;
+    margin: 0;
+  }
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .main-photo {
+    min-height: 130vh;
+  }
+  .main-photo img {
+    height: 130vh;
+  }
+  .main-content {
+    top: 15%;
+    transform: translate(-50%, 0%);
+  }
+}
+
+/********************/
+/* MOBILE 1024px */
+/********************/
+@media (max-width: 27em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 23em) {
+  html {
+    font-size: 45%;
+  }
+}
